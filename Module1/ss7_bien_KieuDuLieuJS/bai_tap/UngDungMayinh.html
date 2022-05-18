@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="value1" id="value1">
+    <input type="text" name="value2" id="value2">
+    <button id="addition" onclick="add()">addition(+)</button>
+    <button id="Subtraction" onclick="add2()">Subtraction(-)</button>
+    <button id="Multiplication" onclick="add3()">Multiplication(*)</button>
+    <button id="Division" onclick="add4()">Division(/)</button>
+    <script>
+
+        
+        function add(){
+            var value1 = parseInt(document.getElementById('value1').value);
+        
+            var value2=  parseInt(document.getElementById('value2').value);
+
+            alert(value1+value2)
+
+        }
+        function add2(){
+            var value1 = parseInt(document.getElementById('value1').value);
+        
+            var value2=  parseInt(document.getElementById('value2').value);
+
+            alert(value1-value2)
+
+        }
+        function add3(){
+            var value1 = parseInt(document.getElementById('value1').value);
+        
+            var value2=  parseInt(document.getElementById('value2').value);
+
+            alert(value1*value2)
+
+        }
+        function add4(){
+            var value1 = parseInt(document.getElementById('value1').value);
+        
+            var value2=  parseInt(document.getElementById('value2').value);
+
+            alert(value1/value2)
+
+        }
+        
+        
+    </script>
+</body>
+    
+</html>

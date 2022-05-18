@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+        <table >
+            <tr>
+                <td>
+                    <p>Amount</p>
+                </td>
+                <td>
+                    <p>From Currency</p>
+                </td>
+                <td>
+                    <p>To Currency</p>
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="Amount"  id="amount">
+                </td>
+                <td>
+                    <select name="FromCurrency" id="fromCurryency">
+                        <option value="VietNam">VietNam</option>
+                        <option value="">Laos</option>
+                        <option value="">ThaiLan</option>
+                        <option value="">China</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="ToCurrency" id="toCurrency">
+                        <option value="USD">USD</option>
+                        <option value="">EURO</option>
+                    </select>
+                </td>
+                <td>
+                    <button name="Convert" onclick="Convert()" id="convert">Convert</button>
+                </td>
+            </tr>
+        </table>
+
+    <script>
+        function Convert(){
+            var amount = document.getElementById('amount').value;
+          amount= parseInt(amount);
+          console.log(isNaN(amount));
+          var toCurrency= document.getElementById('toCurrency').value;
+          var fromCurryency=document.getElementById('fromCurryency').value;
+          if(isNaN(amount)||amount<=0){
+              alert("amount khong hop le");
+          }
+          else{
+              if(fromCurryency=='VietNam'&&toCurrency=='USD'){
+                 alert(amount*23000)
+              }
+          }
+        }
+         
+         
+
+    </script>
+</body>
+</html>
