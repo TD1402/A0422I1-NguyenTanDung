@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btnYes{
+            left: 154.87px;
+            top: 177.621px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+ 
+        <h1>Ra Truong Dung Han</h1>
+        <button id="btnYes" onmouseover="evt1()"  >yes</button>    
+        <button id="btnNo" onclick="evt2()" >No</button>
+    
+
+    <script>
+         
+         function evt1(){
+         let x=(Math.random()* window.innerWidth)
+         let y=(Math.random()*window.innerHeight)
+         document.getElementById("btnYes").style.left=x+"px"
+         document.getElementById("btnYes").style.top=y+"px"
+         }
+         function evt2(){
+             alert("nut nay tao cho vui thoi :((")
+         }
+    </script>
+</body>
+</html>
