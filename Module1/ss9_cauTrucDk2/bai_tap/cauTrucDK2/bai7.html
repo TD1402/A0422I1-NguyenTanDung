@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ax^2+bx+c=0
+        let a=parseFloat(prompt("Enter a number:"));
+        let b=parseFloat(prompt("Enter a number:"));
+        let c=parseFloat(prompt("Enter a number:"));
+        denTa=b*b-4*a*c;
+        if(denTa>=0){
+            x1=(-b+Math.sqrt(denTa)/(2*a));
+            x2=(-b-Math.sqrt(denTa)/(2*a));
+            alert("Nghien cua pt:" +x1+" , "+x2)
+        }
+        else{
+            alert("pt vo nghiem")
+        }
+    </script>
+</body>
+</html>
