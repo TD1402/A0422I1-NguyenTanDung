@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n=parseInt(prompt("nhap do dai mang:"))
+        let array=[];
+        for(let i=0;i<n;i++){
+            array[i]=parseInt(prompt("nhap phan tu thu "+i))
+
+        }
+        let count=0
+        for(let j=0;j<array.length;j++){
+            if(isNaN(array[j])){
+                count++;
+
+                
+            }
+        }
+        document.write(count)
+
+    </script>
+</body>
+</html>
